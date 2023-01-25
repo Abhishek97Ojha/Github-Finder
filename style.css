@@ -25,13 +25,16 @@ body {
     display: flex;
     justify-content: center;
     position: sticky;
+    top:0;
     box-shadow: rgba(248, 245, 245, 0.18) 0px 2px 4px;
 }
 
 .left {
     /* border: 2px solid yellow; */
     width: 70%;
-    display: flex
+    display: flex ;
+    /* align-items: center; */
+
 }
 
 .left h2 {
@@ -54,7 +57,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.right a{
+
+.right a {
     text-decoration: none;
 }
 
@@ -123,6 +127,7 @@ button {
     font-size: large;
     cursor: pointer;
 }
+
 button:hover {
     background-color: cornflowerblue;
     color: black;
@@ -133,14 +138,16 @@ button:active {
     transform: translateY(1px);
     box-shadow: 0 1px #666;
 }
-#clear{
+
+#clear {
     border: 3px solid rgb(43, 35, 35);
     width: 6rem;
     margin-left: 7rem;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.bottom{
+
+.bottom {
     /* border: 2px solid red; */
     width: 93%;
     margin-top: 1rem;
@@ -148,7 +155,8 @@ button:active {
     flex-wrap: wrap;
     margin-bottom: 3rem;
 }
-.card{
+
+.card {
     background-color: black;
     display: flex;
     justify-content: space-evenly;
@@ -156,19 +164,21 @@ button:active {
     /* border: 2px solid green; */
     height: 4.5rem;
     width: 18rem;
-    border-radius: 15px ;
+    border-radius: 15px;
     margin: .67rem;
     /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
     box-shadow: rgba(248, 245, 245, 0.18) 0px 2px 4px;
 
 }
-#img{
+
+#img {
     /* border: 2px solid green; */
     width: 30%;
     height: 90%;
     border-radius: 50%;
 }
-#details{
+
+#details {
     /* border: 2px solid green; */
     width: 60%;
     height: 100%;
@@ -177,35 +187,42 @@ button:active {
     flex-direction: column;
     align-items: center;
 }
-@media screen and (max-width: 480px){
-    .navbar{
+
+@media screen and (max-width: 480px) {
+    .navbar {
         justify-content: flex-start;
     }
-    .top h2{
+
+    .top h2 {
         font-size: larger;
 
     }
-    .left img{
+
+    .left img {
         margin: 0;
     }
-    .card{
-        margin-left:3.5rem;
+
+    .card {
+        margin-left: 3.5rem;
     }
 }
-@media screen and (max-width: 380px){
-    .navbar{
+
+@media screen and (max-width: 380px) {
+    .navbar {
         /* border: 2px solid red; */
-        width:23rem;
+        width: 23rem;
     }
-    #clear{
+
+    #clear {
         margin-left: 1rem;
     }
-   
-    .right h3{
+
+    .right h3 {
         width: 4rem;
         /* border: 2px solid red; */
     }
-    .card{
-        margin-left:3rem;
+
+    .card {
+        margin-left: 3rem;
     }
 }
