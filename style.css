@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+body {
+    /* width: 100%; */
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.navbar {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    box-shadow: rgba(248, 245, 245, 0.18) 0px 2px 4px;
+}
+
+.left {
+    /* border: 2px solid yellow; */
+    width: 70%;
+    display: flex
+}
+
+.left h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 14px;
+    padding-left: 4px;
+}
+
+.left img {
+    /* border: 2px solid green; */
+    margin-left: 3rem;
+    height: 100%;
+    width: 9rem;
+}
+
+.right {
+    /* border: 2px solid yellow; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right a{
+    text-decoration: none;
+}
+
+h3 {
+    /* border: 1px solid red; */
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+h3:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px #666;
+}
+
+.top {
+    margin-top: 1rem;
+    /* border: 2px solid red; */
+    width: 93%;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.search {
+    display: flex;
+    height: 3rem;
+    /* border: 2px solid red; */
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    border: 2px solid rgb(43, 35, 35);
+    color: black;
+    height: 2.3rem;
+    width: 20rem;
+    border-right: none;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: inset 3px 3px 8px #cbced1,
+        inset -2px -2px 8px #cbced1;
+    padding-left: 10px;
+}
+
+button {
+    border: 3px solid rgb(43, 35, 35);
+    height: 2.4rem;
+    width: 5rem;
+    border-left: none;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgba(43, 42, 42, 0.596);
+    font-size: large;
+    cursor: pointer;
+}
+button:hover {
+    background-color: cornflowerblue;
+    color: black;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px #666;
+}
+#clear{
+    border: 3px solid rgb(43, 35, 35);
+    width: 6rem;
+    margin-left: 7rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.bottom{
+    /* border: 2px solid red; */
+    width: 93%;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+.card{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid green; */
+    height: 4.5rem;
+    width: 18rem;
+    border-radius: 15px ;
+    margin: .67rem;
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+    box-shadow: rgba(248, 245, 245, 0.18) 0px 2px 4px;
+
+}
+#img{
+    /* border: 2px solid green; */
+    width: 30%;
+    height: 90%;
+    border-radius: 50%;
+}
+#details{
+    /* border: 2px solid green; */
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 480px){
+    .navbar{
+        justify-content: flex-start;
+    }
+    .top h2{
+        font-size: larger;
+
+    }
+    .left img{
+        margin: 0;
+    }
+    .card{
+        margin-left:3.5rem;
+    }
+}
+@media screen and (max-width: 380px){
+    .navbar{
+        /* border: 2px solid red; */
+        width:23rem;
+    }
+    #clear{
+        margin-left: 1rem;
+    }
+   
+    .right h3{
+        width: 4rem;
+        /* border: 2px solid red; */
+    }
+    .card{
+        margin-left:3rem;
+    }
+}
